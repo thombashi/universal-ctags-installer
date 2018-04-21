@@ -3,7 +3,7 @@
 set -eu
 
 if [ -e /etc/debian_version ] || [ -e /etc/debian_release ]; then
-    apt install autoconf -y
+    apt install autoconf pkg-config -y
 elif [ -e /etc/fedora-release ] || [ -e /etc/redhat-release ]; then
     dnf install autoconf -y
 fi
