@@ -3,11 +3,7 @@
 set -eu
 
 if [ -e /etc/debian_version ] || [ -e /etc/debian_release ]; then
-    if aptitude -h > /dev/null 2>&1; then
-        aptitude install autoconf -y
-    else
-        apt install autoconf -y
-    fi
+    apt install autoconf -y
 elif [ -e /etc/fedora-release ] || [ -e /etc/redhat-release ]; then
     dnf install autoconf -y
 fi
