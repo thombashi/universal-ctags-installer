@@ -19,7 +19,7 @@ https://hub.docker.com/r/thombashi/universal-ctags-installer/
 
 ```
 $ docker pull thombashi/universal-ctags-installer
-$ docker run -v /where/you/want:/dist universal_ctags_installer
+$ docker run -v /where/you/want:/dist thombashi/universal_ctags_installer
 ```
 
 Universal Ctags will installed to `/where/you/want/bin` (you could specify an arbitrary path to `/where/you/want`).
